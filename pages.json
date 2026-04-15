@@ -1,0 +1,104 @@
+{
+  "origin": "https://guerrillajiujitsumodesto.com",
+  "totalPages": 14,
+  "pages": [
+    {
+      "url": "https://guerrillajiujitsumodesto.com/",
+      "pathname": "/",
+      "label": "Home",
+      "slug": "index",
+      "type": "home"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/home",
+      "pathname": "/home",
+      "label": "HOME",
+      "slug": "home",
+      "type": "home"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/about",
+      "pathname": "/about",
+      "label": "ABOUT",
+      "slug": "about",
+      "type": "about"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/services",
+      "pathname": "/services",
+      "label": "SCHEDULE",
+      "slug": "services",
+      "type": "services"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/schedule-407188",
+      "pathname": "/schedule-407188",
+      "label": "Schedule 407188",
+      "slug": "schedule-407188",
+      "type": "schedule"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/contact-us",
+      "pathname": "/contact-us",
+      "label": "Contact Us",
+      "slug": "contact-us",
+      "type": "contact"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/contact",
+      "pathname": "/contact",
+      "label": "CONTACT US",
+      "slug": "contact",
+      "type": "contact"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/faqs",
+      "pathname": "/faqs",
+      "label": "Faqs",
+      "slug": "faqs",
+      "type": "faq"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/blog-370327",
+      "pathname": "/blog-370327",
+      "label": "Blog 370327",
+      "slug": "blog-370327",
+      "type": "blog"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/blog",
+      "pathname": "/blog",
+      "label": "BLOG",
+      "slug": "blog",
+      "type": "blog"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/privacy-policy",
+      "pathname": "/privacy-policy",
+      "label": "Privacy Policy",
+      "slug": "privacy-policy",
+      "type": "page"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/privacy-policy-909165",
+      "pathname": "/privacy-policy-909165",
+      "label": "Privacy Policy 909165",
+      "slug": "privacy-policy-909165",
+      "type": "page"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/terms-conditions",
+      "pathname": "/terms-conditions",
+      "label": "Terms & Conditions",
+      "slug": "terms-conditions",
+      "type": "page"
+    },
+    {
+      "url": "https://guerrillajiujitsumodesto.com/thank-you-2546-7741-8464",
+      "pathname": "/thank-you-2546-7741-8464",
+      "label": "Thank You 2546 7741 8464",
+      "slug": "thank-you-2546-7741-8464",
+      "type": "page"
+    }
+  ]
+}

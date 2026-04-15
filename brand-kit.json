@@ -1,0 +1,40 @@
+{
+  "slug": "guerrilla-jiujitsu-modesto",
+  "originalColors": ["#AE9958", "#2A2D31", "#1A1C1F", "#F5F5F5"],
+  "colorAudit": {
+    "contrastIssues": [
+      "Original gold #AE9958 on pure black (#000) is fine (9.1:1) but on mid-gray #2A2D31 drops to 4.6:1 — passes AA body but tight for small muted text. Lifted gold slightly for consistent hierarchy across surfaces."
+    ],
+    "harmonyType": "neutral-warm + neutral-cool — warm gold accent against cool gunmetal/near-black base. Single-accent palette, high restraint — correct for a combat-sport brand.",
+    "hierarchyStatus": "strong — one electric warm accent, two tiers of cool neutral background, one light text tier. Clear primary-secondary-surface structure.",
+    "saturationNotes": "Gold at ~42% saturation hits the 'antique brass' zone — premium, not cheap. Kept that note. Gunmetal at ~7% saturation reads as a cool-leaning gray, not plain black — preserves 'gunmetal' feel."
+  },
+  "correctedPalette": {
+    "--bg": "#141618",
+    "--bg-card": "#1F2226",
+    "--bg-elevated": "#2A2D31",
+    "--text-primary": "#F5F2EB",
+    "--text-muted": "#9BA0A6",
+    "--accent": "#B8A263",
+    "--accent-hover": "#D1B975",
+    "--accent-subtle": "rgba(184, 162, 99, 0.12)",
+    "--border": "rgba(245, 242, 235, 0.08)"
+  },
+  "mode": "dark",
+  "colorShifts": [
+    "Lifted gold from #AE9958 → #B8A263 (+4 lightness, same warm brass family) to hit consistent 5.5:1+ contrast on both --bg and --bg-card",
+    "Shifted bg from #1A1C1F → #141618 (slightly cooler/deeper) to let the gunmetal mid-tone (#2A2D31) read as a distinct elevated surface",
+    "Added --bg-card (#1F2226) as a third neutral tier between bg and gunmetal — gives the design system proper surface hierarchy (bg → card → elevated)",
+    "Warmed text-primary from pure white to #F5F2EB (cream-tinted) so body copy picks up a trace of the gold's warmth — ties the palette together",
+    "Added #9BA0A6 as --text-muted (cool gray) for captions/metadata — matches the gunmetal temperature",
+    "accent-hover lightens to #D1B975 for interactive lift (dark-mode convention: hover gets brighter, not darker)"
+  ],
+  "fontRecommendation": {
+    "code": "F7",
+    "body": "Inter 400-600",
+    "display": "Archivo Black or Anton (condensed display sans-serif)",
+    "reasoning": "Performance-Athletic style calls for athletic sportswear energy. Condensed black display sans for kinetic marquees and oversized headlines; Inter for body copy readability. The condensed display pairs cleanly with the gold accent without fighting it."
+  },
+  "designStyle": "performance-athletic-skill",
+  "cssBlock": ":root {\n  --bg: #141618;\n  --bg-card: #1F2226;\n  --bg-elevated: #2A2D31;\n  --text-primary: #F5F2EB;\n  --text-muted: #9BA0A6;\n  --accent: #B8A263;\n  --accent-hover: #D1B975;\n  --accent-subtle: rgba(184, 162, 99, 0.12);\n  --border: rgba(245, 242, 235, 0.08);\n}"
+}

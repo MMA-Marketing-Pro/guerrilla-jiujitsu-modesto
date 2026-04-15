@@ -1,0 +1,139 @@
+{
+  "name": "Guerrilla Jiu-Jitsu Modesto",
+  "slug": "guerrilla-jiujitsu-modesto",
+  "website": "https://guerrillajiujitsumodesto.com",
+  "businessType": "BJJ academy (NoGi specialty)",
+  "tagline": "The #1 Jiu-Jitsu Academy in Modesto, CA",
+  "city": "Modesto",
+  "state": "CA",
+  "siteStructure": {
+    "totalPages": 9,
+    "isSinglePage": false,
+    "pages": [
+      { "url": "https://guerrillajiujitsumodesto.com/", "label": "Home", "slug": "index", "type": "homepage", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshot-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/about", "label": "About", "slug": "about", "type": "about", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/about-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/services", "label": "Schedule", "slug": "services", "type": "services", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/services-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/contact", "label": "Contact", "slug": "contact", "type": "contact", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/contact-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/faqs", "label": "FAQs", "slug": "faqs", "type": "faq", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/faqs-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/blog", "label": "Blog", "slug": "blog", "type": "blog", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/blog-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/privacy-policy", "label": "Privacy Policy", "slug": "privacy-policy", "type": "legal", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/privacy-policy-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/terms-conditions", "label": "Terms & Conditions", "slug": "terms-conditions", "type": "legal", "screenshotPath": "sites/guerrilla-jiujitsu-modesto/screenshots/terms-conditions-before.png" },
+      { "url": "https://guerrillajiujitsumodesto.com/booking", "label": "Booking (new)", "slug": "booking", "type": "booking", "screenshotPath": null }
+    ]
+  },
+  "pageContent": {
+    "home": {
+      "heroHeadline": "The #1 Jiu-Jitsu Academy in Modesto, CA",
+      "heroSubheadline": "We teach you how to become an expert at self-defense using Jiu-Jitsu.",
+      "heroCTA": "Try a Free Class",
+      "classesOverview": [
+        { "name": "Adults Jiu-Jitsu (NoGi)", "description": "The only NoGi-specialty school in the area. Beginners program covers the key components and systems of submission grappling. Advanced class goes deeper into finer details, options, and trap-setting — whether you are new or experienced, there is a program for you." },
+        { "name": "Youth / Kids Jiu-Jitsu", "description": "Our kids program helps your child become an expert at self-defense using our proven system. Classes for kids age 3 and up. Whether they want self-defense, fitness and friends, or to compete in grappling tournaments — we have a program for them." }
+      ],
+      "trustSignals": ["6 classes per week", "NoGi-only specialty", "Kids age 3+", "Black-belt-led instruction"],
+      "testimonials": [
+        { "name": "Irving Garcia", "quote": "My younger brother and I recently went to a trial class and it was great. Mike, the instructor, was super friendly, welcoming, and supportive. The students were very nice as well. The place is clean and in a great location. We got a membership the same day. 10/10." },
+        { "name": "Miles Martinez", "quote": "This place is the real deal for anyone looking to begin Jiu-Jitsu or level up. Mike and Hani are some of the best in the area and put their all into their students. It's a great environment for families and children. Guerrilla Jiu Jitsu Modesto is the only place I'd recommend in the area." },
+        { "name": "John Peery", "quote": "I've been to a couple of Jiu-Jitsu schools around town and these guys are by far the best. I've been training there for 9 months and my son started in January. We've both progressed so much. The curriculum is top notch, classes are not intimidating, and the vibe is supportive and positive." }
+      ]
+    },
+    "about": {
+      "heading": "About Guerrilla Jiu-Jitsu Modesto",
+      "ownerName": "Mike Cruz",
+      "ownerRole": "Owner / Head Instructor",
+      "credentials": [
+        "Black Belt under Alejandro Perez",
+        "Mentored by legendary Dave Camarillo",
+        "Nine years of professional Jiu-Jitsu experience",
+        "Guerrilla Certified Instructor"
+      ],
+      "additionalTestimonials": [
+        { "name": "D Ventura", "quote": "This is an excellent place to train whether you are an adult, teenager, or child. Exceptional instruction and a safe environment where everyone can grow mentally and physically strong." },
+        { "name": "Chris Vloothuis", "quote": "Great place to train — supportive staff, clean facility, and instruction that actually makes you better fast." },
+        { "name": "Natasha Fraser", "quote": "My kids love it here. Instructors are patient and the community is like family." }
+      ]
+    },
+    "services": {
+      "heading": "Guerrilla Jiu-Jitsu Modesto Class Schedule",
+      "schedule": [
+        { "day": "Monday", "classes": [
+          { "name": "NoGi Beginners", "time": "6:00 PM" },
+          { "name": "Jiu-Jitsu (NoGi)", "time": "7:00 PM" }
+        ]},
+        { "day": "Tuesday", "classes": [
+          { "name": "Kids Jiu-Jitsu (3–11 yrs)", "time": "4:00 PM" },
+          { "name": "NoGi Beginners", "time": "6:00 PM" },
+          { "name": "Jiu-Jitsu (NoGi)", "time": "7:00 PM" }
+        ]},
+        { "day": "Wednesday", "classes": [
+          { "name": "Kids Jiu-Jitsu (6–8 yrs)", "time": "4:00 PM" },
+          { "name": "Open Mat", "time": "6:00 PM" }
+        ]},
+        { "day": "Thursday", "classes": [
+          { "name": "Kids Jiu-Jitsu (3–11 yrs)", "time": "4:00 PM" },
+          { "name": "NoGi Beginners", "time": "6:00 PM" },
+          { "name": "Jiu-Jitsu (NoGi)", "time": "7:00 PM" }
+        ]},
+        { "day": "Friday", "classes": [
+          { "name": "Jiu-Jitsu (NoGi)", "time": "6:00 PM" }
+        ]}
+      ],
+      "programs": [
+        { "id": "adults-nogi-beginners", "name": "Adults NoGi Beginners" },
+        { "id": "adults-nogi", "name": "Adults Jiu-Jitsu (NoGi)" },
+        { "id": "kids-jiujitsu", "name": "Kids Jiu-Jitsu (Ages 3–11)" },
+        { "id": "open-mat", "name": "Open Mat" }
+      ]
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "phone": "(209) 681-5677",
+      "email": "guerrillajjmodesto@gmail.com",
+      "address": "2508 Oakdale Rd, Modesto, CA 95355",
+      "formFields": ["Full Name", "Phone", "Email", "How Can We Help?"]
+    },
+    "faqs": {
+      "heading": "Frequently Asked Questions",
+      "faqs": [
+        { "q": "Is Brazilian Jiu-Jitsu suitable for beginners?", "a": "Yes, Brazilian Jiu-Jitsu is suitable for beginners of all ages and fitness levels." },
+        { "q": "Do I need to be in shape to start training Brazilian Jiu-Jitsu?", "a": "No, Brazilian Jiu-Jitsu is for everyone regardless of current fitness level." },
+        { "q": "I'm worried about getting injured. Is Brazilian Jiu-Jitsu safe?", "a": "Brazilian Jiu-Jitsu emphasizes technique and control, reducing the risk of injury." },
+        { "q": "Can Brazilian Jiu-Jitsu help with self-defense?", "a": "Absolutely. Brazilian Jiu-Jitsu teaches effective self-defense techniques for individuals of all sizes and strengths." },
+        { "q": "What can I expect in my first Brazilian Jiu-Jitsu class?", "a": "In your first class, you'll start with a warm-up, learn foundational techniques, and drill them with a partner in a welcoming environment." },
+        { "q": "What should I wear to a NoGi class?", "a": "Athletic shorts (no zippers or pockets) and a rashguard or fitted t-shirt. No shoes on the mats." },
+        { "q": "Do you offer a free trial?", "a": "Yes — your first class is free. Book a time that works for you and we'll take care of the rest." },
+        { "q": "Can my child train here?", "a": "Yes. We have kids classes for ages 3 and up, grouped by age for a safe, age-appropriate experience." }
+      ]
+    },
+    "blog": {
+      "heading": "Guerrilla Jiu-Jitsu Blog",
+      "note": "No blog posts currently published — build a placeholder page with a subscribe CTA."
+    },
+    "legal": {
+      "privacyPolicy": "Standard privacy policy — we collect contact form submissions to respond to inquiries and for marketing communications. No data sold to third parties.",
+      "termsConditions": "Standard terms — membership agreements governed by signed waiver and liability release."
+    }
+  },
+  "socialMedia": {
+    "instagram": "http://instagram.com/guerrillajjmodesto"
+  },
+  "brandColors": ["#AE9958", "#2A2D31", "#1A1C1F", "#F5F5F5"],
+  "brandColorRoles": {
+    "primary": "#AE9958",
+    "secondary": "#2A2D31",
+    "background": "#1A1C1F",
+    "accent": "#AE9958",
+    "textDark": "#1A1C1F",
+    "textLight": "#F5F5F5"
+  },
+  "logoUrl": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/E4Cw21kwKqfDDFY8h7pU/media/69134e5110d6934a55efac22.png",
+  "existingImages": {
+    "logo": { "found": true, "url": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/E4Cw21kwKqfDDFY8h7pU/media/69134e5110d6934a55efac22.png", "format": "PNG/WEBP" },
+    "team": [{ "name": "Mike Cruz", "role": "Owner/Head Instructor", "isReal": false }],
+    "gallery": { "count": 0, "appearsReal": false },
+    "facility": { "count": 0, "description": "No interior/facility shots found on current site" }
+  },
+  "designRecommendation": "performance-athletic-skill",
+  "designReasoning": "Modern BJJ academy with a strong accessible/family-friendly positioning (kids age 3+, beginner-welcoming tone), lineage credentials (black belt under Alejandro Perez, mentored by Dave Camarillo) but no pro fighter roster, and a clearly sport-brand vibe. Performance-Athletic is the best fit — bold sportswear energy, kinetic marquees, electric accent — using their extracted gold (#AE9958) and red (#EF1921) as the palette.",
+  "currentSiteIssues": "Built on a GoHighLevel template — looks generic and templated. Weak hero hierarchy (two stacked H1s, competing CTAs). No clear visual proof (no real instructor photos, no mat/facility shots). Typography is flat, spacing is uneven, color palette is mostly black/white with gold accent under-leveraged. Testimonials are buried and unstyled. Schedule page is a plain text block (no visual grid or filtering). FAQs lack accordion structure. Blog is empty. No visible lead-capture flow — CTAs go to a basic external scheduler."
+}

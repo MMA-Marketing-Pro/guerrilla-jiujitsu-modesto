@@ -1,0 +1,121 @@
+{
+  "business": {
+    "name": "Guerrilla Jiu-Jitsu Modesto",
+    "city": "Modesto",
+    "state": "CA",
+    "county": "Stanislaus",
+    "zip": "95355",
+    "primaryService": "Brazilian Jiu-Jitsu (NoGi specialty)",
+    "siteRoot": "https://guerrillajiujitsumodesto.com"
+  },
+  "locations": {
+    "note": "Validate with client — especially neighborhood boundaries and which surrounding towns they're willing to target. Radius ~20 miles from 2508 Oakdale Rd.",
+    "city": "Modesto",
+    "neighborhoods": [
+      "Downtown Modesto",
+      "North Modesto",
+      "East Modesto",
+      "West Modesto",
+      "McHenry Avenue",
+      "Village One",
+      "La Loma",
+      "Shackelford"
+    ],
+    "surroundingTowns": [
+      "Oakdale",
+      "Riverbank",
+      "Salida",
+      "Empire",
+      "Ceres",
+      "Turlock",
+      "Waterford",
+      "Hughson",
+      "Escalon",
+      "Patterson"
+    ]
+  },
+  "services": [
+    { "slug": "brazilian-jiu-jitsu", "label": "Brazilian Jiu-Jitsu", "priority": 1 },
+    { "slug": "nogi-jiu-jitsu", "label": "NoGi Jiu-Jitsu", "priority": 1 },
+    { "slug": "kids-jiu-jitsu", "label": "Kids Jiu-Jitsu", "priority": 1 },
+    { "slug": "self-defense", "label": "Self-Defense Classes", "priority": 2 },
+    { "slug": "submission-grappling", "label": "Submission Grappling", "priority": 2 },
+    { "slug": "martial-arts", "label": "Martial Arts", "priority": 3 },
+    { "slug": "grappling", "label": "Grappling", "priority": 3 }
+  ],
+  "personas": [
+    { "slug": "beginners", "label": "Beginners" },
+    { "slug": "adults", "label": "Adults" },
+    { "slug": "women", "label": "Women" },
+    { "slug": "kids", "label": "Kids" },
+    { "slug": "teens", "label": "Teens" },
+    { "slug": "over-40", "label": "Adults Over 40" },
+    { "slug": "competitors", "label": "Competitors" },
+    { "slug": "parents", "label": "Parents Looking for Kids Martial Arts" },
+    { "slug": "law-enforcement", "label": "Law Enforcement & Military" }
+  ],
+  "comparisons": [
+    { "slug": "bjj-vs-wrestling",          "label": "BJJ vs Wrestling" },
+    { "slug": "bjj-vs-judo",               "label": "BJJ vs Judo" },
+    { "slug": "bjj-vs-mma",                "label": "BJJ vs MMA" },
+    { "slug": "bjj-vs-karate",             "label": "BJJ vs Karate (for Kids Self-Defense)" },
+    { "slug": "gi-vs-nogi",                "label": "Gi vs NoGi BJJ" },
+    { "slug": "bjj-vs-muay-thai",          "label": "BJJ vs Muay Thai" },
+    { "slug": "bjj-vs-taekwondo-for-kids", "label": "BJJ vs Taekwondo for Kids" },
+    { "slug": "bjj-vs-boxing",             "label": "BJJ vs Boxing for Self-Defense" }
+  ],
+  "curation": [
+    { "slug": "best-bjj-gym-in-modesto",               "label": "Best BJJ Gym in Modesto" },
+    { "slug": "best-martial-arts-school-in-modesto",   "label": "Best Martial Arts School in Modesto" },
+    { "slug": "best-kids-martial-arts-in-modesto",     "label": "Best Kids Martial Arts in Modesto" },
+    { "slug": "best-nogi-bjj-in-central-valley",       "label": "Best NoGi BJJ in the Central Valley" },
+    { "slug": "best-self-defense-class-in-modesto",    "label": "Best Self-Defense Class in Modesto" },
+    { "slug": "best-jiu-jitsu-for-adults-in-modesto",  "label": "Best Jiu-Jitsu for Adults in Modesto" },
+    { "slug": "best-after-school-program-in-modesto",  "label": "Best After-School Program in Modesto (for Active Kids)" },
+    { "slug": "best-womens-martial-arts-in-modesto",   "label": "Best Women's Martial Arts in Modesto" }
+  ],
+  "glossary": [
+    { "slug": "what-is-brazilian-jiu-jitsu",     "label": "What Is Brazilian Jiu-Jitsu?" },
+    { "slug": "what-is-nogi-jiu-jitsu",          "label": "What Is NoGi Jiu-Jitsu?" },
+    { "slug": "what-is-submission-grappling",    "label": "What Is Submission Grappling?" },
+    { "slug": "bjj-belt-system-explained",       "label": "The BJJ Belt System Explained" },
+    { "slug": "bjj-stripe-system",               "label": "How the BJJ Stripe System Works" },
+    { "slug": "how-long-to-earn-a-blue-belt",    "label": "How Long Does It Take to Earn a BJJ Blue Belt?" },
+    { "slug": "bjj-white-belt-guide",            "label": "BJJ White Belt Guide: What to Expect" },
+    { "slug": "is-bjj-good-for-self-defense",    "label": "Is BJJ Good for Self-Defense?" },
+    { "slug": "is-bjj-safe-for-kids",            "label": "Is BJJ Safe for Kids?" },
+    { "slug": "what-age-can-kids-start-bjj",     "label": "What Age Can Kids Start BJJ?" },
+    { "slug": "what-to-wear-to-a-bjj-class",     "label": "What to Wear to a NoGi BJJ Class" },
+    { "slug": "bjj-etiquette-for-beginners",     "label": "BJJ Etiquette for Beginners" },
+    { "slug": "what-is-open-mat-in-bjj",         "label": "What Is Open Mat in BJJ?" },
+    { "slug": "bjj-warm-up-exercises",           "label": "BJJ Warm-Up Exercises Every Beginner Should Know" },
+    { "slug": "how-to-tap-in-bjj",               "label": "How to Tap in BJJ (and Why It Keeps You Safe)" },
+    { "slug": "bjj-training-frequency",          "label": "How Often Should You Train BJJ as a Beginner?" },
+    { "slug": "is-bjj-good-workout",             "label": "Is BJJ a Good Workout?" },
+    { "slug": "bjj-for-weight-loss",             "label": "Does BJJ Help with Weight Loss?" },
+    { "slug": "bjj-injury-prevention",           "label": "BJJ Injury Prevention for Beginners" },
+    { "slug": "nogi-submissions-for-beginners",  "label": "Basic NoGi Submissions Every Beginner Should Learn" }
+  ],
+  "examples": [
+    { "slug": "basic-bjj-guard-positions",    "label": "Basic BJJ Guard Positions Explained" },
+    { "slug": "rear-naked-choke-technique",   "label": "Rear Naked Choke: Step-by-Step Technique" },
+    { "slug": "bjj-escape-from-mount",        "label": "How to Escape the Mount in BJJ" },
+    { "slug": "bjj-armbar-tutorial",          "label": "The Armbar: A Beginner's Breakdown" },
+    { "slug": "triangle-choke-tutorial",      "label": "Triangle Choke: How It Works" },
+    { "slug": "bjj-shrimp-hip-escape",        "label": "The Shrimp / Hip Escape Drill" },
+    { "slug": "bjj-breakfall-technique",      "label": "BJJ Breakfalls: How to Land Safely" },
+    { "slug": "bjj-takedowns-for-nogi",       "label": "NoGi Takedowns for Beginners" },
+    { "slug": "half-guard-basics",            "label": "Half Guard Basics for NoGi" },
+    { "slug": "passing-the-guard-fundamentals","label": "Passing the Guard: Fundamentals" }
+  ],
+  "pricingOffers": [
+    { "slug": "free-trial-class-modesto",      "label": "Free BJJ Trial Class in Modesto" },
+    { "slug": "kids-bjj-first-class-free",     "label": "Kids BJJ: First Class Free in Modesto" },
+    { "slug": "family-jiu-jitsu-membership",   "label": "Family Jiu-Jitsu Membership in Modesto" },
+    { "slug": "drop-in-open-mat",              "label": "NoGi Open Mat Drop-In — Modesto" },
+    { "slug": "beginner-bjj-intro-program",    "label": "Beginner BJJ Intro Program — 4 Weeks" }
+  ],
+  "totalPlanned": 180,
+  "targetPerMonth": 25,
+  "phases": 6
+}
