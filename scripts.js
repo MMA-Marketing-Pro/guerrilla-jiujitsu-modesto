@@ -158,8 +158,35 @@
           submittedAt: new Date().toISOString()
         };
         try { sessionStorage.setItem('leadFormData', JSON.stringify(data)); } catch (e) {}
-        // TODO: wire a webhook or GHL form-submit endpoint here if backend capture is desired.
-        window.location.href = 'booking.html?program=' + encodeURIComponent(data.program);
+
+        /* ---- GHL Webhooks ---- */
+        var webhooks = [];
+
+        if (data.program === 'adults-jiu-jitsu') {
+          webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/3681fad5-5494-41ba-aa6a-a317338d4ec4');
+          webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/93de8b3c-eff9-4a43-8e8a-8ed7223a4016');
+        }
+
+        if (data.program === 'kids-jiu-jitsu') {
+          webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/c0125bb8-12ca-46dd-82a7-f628522011a9');
+          webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/b5f38aae-8aa3-4ea8-8804-30039ffe29ac');
+        }
+
+        var redirectUrl = 'booking.html?program=' + encodeURIComponent(data.program);
+
+        if (webhooks.length) {
+          Promise.all(webhooks.map(function (url) {
+            return fetch(url, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data)
+            }).catch(function () {});
+          })).then(function () {
+            window.location.href = redirectUrl;
+          });
+        } else {
+          window.location.href = redirectUrl;
+        }
       });
     }
   }
