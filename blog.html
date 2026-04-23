@@ -20,10 +20,10 @@
 <meta name="twitter:image" content="https://guerrillajiujitsumodesto.com/images/hero/IMG_1537.JPG">
 <link rel="icon" type="image/webp" href="images/logo/logo-circle.webp">
 <link rel="apple-touch-icon" href="images/logo/logo-circle.webp">
-<meta name="theme-color" content="#141618">
+<meta name="theme-color" content="#0D0F11">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -60,7 +60,8 @@
   </div>
   <div class="container">
     <p class="eyebrow">The Guerrilla Journal</p>
-    <h1 class="display">Training Notes. <br>From the Mat.</h1>
+    <div class="page-crumbs"><a href="index.html">Home</a><span class="divider">/</span>Blog</div>
+    <h1 class="display">Training Notes. <br><em>From the Mat.</em></h1>
     <p class="lead">Technique breakdowns, beginner guides, and self-defense insights from our coaches. New posts landing soon.</p>
   </div>
 </header>
@@ -78,9 +79,9 @@
 
 <section class="cta-banner" style="padding-block: clamp(56px, 7vw, 90px);">
   <div class="container fade-up">
-    <span class="brand-medallion" aria-hidden="true"><span class="brand-stamp brand-stamp--circle brand-stamp--gold"></span></span>
+    <span class="brand-medallion" aria-hidden="true"><span class="brand-logo brand-logo--gold"></span></span>
     <p class="eyebrow">While You Wait</p>
-    <h2 class="display">Learn on the Mat, <span style="color: var(--accent)">Not Just the Screen.</span></h2>
+    <h2 class="display">Learn on the Mat, <em>Not Just the Screen.</em></h2>
     <p>Come try a class free. We'll show you more in one session than any blog post could.</p>
     <button class="btn btn-primary btn-large" data-cta="lead-modal">Book Free Trial Class <i data-lucide="arrow-right"></i></button>
   </div>
@@ -91,7 +92,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-lockup"><span class="brand-stamp brand-stamp--circle brand-stamp--gold" style="width:42px;height:42px;" aria-hidden="true"></span><img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy"></div>
+        <div class="footer-brand-lockup"><span class="brand-logo brand-logo--sm" aria-hidden="true"></span><img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy"></div>
         <p>The #1 NoGi Jiu-Jitsu academy in Modesto, CA. Self-defense, submission grappling, and programs for every age.</p>
         <div class="footer-social">
           <a href="http://instagram.com/guerrillajjmodesto" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
@@ -110,6 +111,14 @@
     <p class="powered-by" style="margin-top: 18px;">Powered by <a href="https://www.mmamarketingpro.com" target="_blank" rel="noopener">MMA Marketing Pro</a></p>
   </div>
 </footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <a href="tel:+12096815677" class="sticky-call" aria-label="Call Guerrilla Jiu-Jitsu Modesto">
+    <i data-lucide="phone"></i>
+  </a>
+  <button class="sticky-book" data-cta="lead-modal">Try a Free Class <i data-lucide="arrow-right"></i></button>
+</div>
 
 <div class="lead-modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
   <div class="lead-modal__backdrop" aria-hidden="true"></div>

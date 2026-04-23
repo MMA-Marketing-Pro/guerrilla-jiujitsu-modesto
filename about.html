@@ -20,10 +20,10 @@
 <meta name="twitter:image" content="https://guerrillajiujitsumodesto.com/images/hero/IMG_1537.JPG">
 <link rel="icon" type="image/webp" href="images/logo/logo-circle.webp">
 <link rel="apple-touch-icon" href="images/logo/logo-circle.webp">
-<meta name="theme-color" content="#141618">
+<meta name="theme-color" content="#0D0F11">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -65,7 +65,8 @@
   </div>
   <div class="container">
     <p class="eyebrow">About the Academy</p>
-    <h1 class="display">Built on Lineage. <br>Sharpened on the Mat.</h1>
+    <div class="page-crumbs"><a href="index.html">Home</a><span class="divider">/</span>About</div>
+    <h1 class="display">Built on <em>Lineage.</em> <br>Sharpened on the Mat.</h1>
     <p class="lead">We're not a belt factory. We're Modesto's only NoGi-specialty academy — led by a black belt who trained under one of the sharpest minds in modern Jiu-Jitsu.</p>
   </div>
 </header>
@@ -98,7 +99,7 @@
     <div class="feature-row fade-up">
       <div class="feature-copy">
         <p class="eyebrow">Why NoGi Only</p>
-        <h2 class="display">Modern Jiu-Jitsu. Closer to Reality.</h2>
+        <h2 class="display">Modern Jiu-Jitsu. <em>Closer to Reality.</em></h2>
         <p>We're the only NoGi-specialty school in the area — and that's intentional. NoGi forces you to rely on leverage, timing, and body control instead of grips that only exist on a training floor. It translates faster to self-defense and moves at the tempo that modern competition rewards.</p>
         <p style="color: var(--muted);">Whether you plan to compete, defend yourself, or just train hard with good people — NoGi sharpens what matters.</p>
       </div>
@@ -114,8 +115,8 @@
   <div class="container">
     <div class="section-head fade-up">
       <p class="eyebrow">The Culture</p>
-      <h2 class="display">Supportive. Positive. Not Intimidating.</h2>
-      <p class="lead">Our members say it best.</p>
+      <h2 class="display">Supportive. Positive. <em>Not Intimidating.</em></h2>
+      <p class="lead lead--muted">Our members say it best.</p>
     </div>
     <div class="testimonials">
       <article class="testimonial fade-up">
@@ -139,9 +140,9 @@
 
 <section class="cta-banner">
   <div class="container fade-up">
-    <span class="brand-medallion" aria-hidden="true"><span class="brand-stamp brand-stamp--circle brand-stamp--gold"></span></span>
+    <span class="brand-medallion" aria-hidden="true"><span class="brand-logo brand-logo--gold"></span></span>
     <p class="eyebrow">Stop Reading. Start Training.</p>
-    <h2 class="display">The Best Way to Meet Us <span style="color: var(--accent)">Is on the Mat.</span></h2>
+    <h2 class="display">The Best Way to Meet Us <em>Is on the Mat.</em></h2>
     <p>Your first class is free. No pressure, no hard sell. Just come train.</p>
     <button class="btn btn-primary btn-large" data-cta="lead-modal">Try a Free Class <i data-lucide="arrow-right"></i></button>
   </div>
@@ -152,7 +153,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-lockup"><span class="brand-stamp brand-stamp--circle brand-stamp--gold" style="width:42px;height:42px;" aria-hidden="true"></span><img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy"></div>
+        <div class="footer-brand-lockup"><span class="brand-logo brand-logo--sm" aria-hidden="true"></span><img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy"></div>
         <p>The #1 NoGi Jiu-Jitsu academy in Modesto, CA. Self-defense, submission grappling, and programs for every age.</p>
         <div class="footer-social">
           <a href="http://instagram.com/guerrillajjmodesto" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
@@ -171,6 +172,14 @@
     <p class="powered-by" style="margin-top: 18px;">Powered by <a href="https://www.mmamarketingpro.com" target="_blank" rel="noopener">MMA Marketing Pro</a></p>
   </div>
 </footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <a href="tel:+12096815677" class="sticky-call" aria-label="Call Guerrilla Jiu-Jitsu Modesto">
+    <i data-lucide="phone"></i>
+  </a>
+  <button class="sticky-book" data-cta="lead-modal">Try a Free Class <i data-lucide="arrow-right"></i></button>
+</div>
 
 <div class="lead-modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
   <div class="lead-modal__backdrop" aria-hidden="true"></div>

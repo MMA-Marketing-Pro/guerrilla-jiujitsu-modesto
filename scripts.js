@@ -4,7 +4,10 @@
   'use strict';
 
   /* ---------------- Lucide icons ---------------- */
-  try { if (window.lucide && lucide.createIcons) lucide.createIcons(); } catch (e) {}
+  function renderIcons() {
+    try { if (window.lucide && lucide.createIcons) lucide.createIcons(); } catch (e) {}
+  }
+  renderIcons();
 
   /* ---------------- Dynamic copyright year ---------------- */
   document.querySelectorAll('[data-year]').forEach(function (el) {
@@ -36,27 +39,49 @@
     });
   }
 
-  /* ---------------- Fade-up scroll reveal ---------------- */
+  /* ---------------- Mobile sticky CTA bar ---------------- */
+  var sticky = document.getElementById('sticky-cta');
+  if (sticky) {
+    document.body.classList.add('has-sticky-cta');
+    var stickyShown = false;
+    var showSticky = function () {
+      var threshold = Math.min(window.innerHeight * 0.7, 600);
+      if (window.scrollY > threshold && !stickyShown) {
+        sticky.classList.add('visible');
+        sticky.setAttribute('aria-hidden', 'false');
+        stickyShown = true;
+      } else if (window.scrollY <= threshold && stickyShown) {
+        sticky.classList.remove('visible');
+        sticky.setAttribute('aria-hidden', 'true');
+        stickyShown = false;
+      }
+    };
+    window.addEventListener('scroll', showSticky, { passive: true });
+    showSticky();
+  }
+
+  /* ---------------- Fade-up scroll reveal (staggered) ---------------- */
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
+      entries.forEach(function (entry, i) {
         if (entry.isIntersecting) {
+          // stagger children in the same group
+          var parent = entry.target.parentElement;
+          var siblings = parent ? Array.prototype.filter.call(parent.children, function (c) {
+            return c.classList && c.classList.contains('fade-up');
+          }) : [entry.target];
+          var idx = siblings.indexOf(entry.target);
+          var delay = Math.min(idx * 90, 360);
+          entry.target.style.transitionDelay = delay + 'ms';
           entry.target.classList.add('in');
           io.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '0px 0px -80px 0px', threshold: 0.05 });
+    }, { rootMargin: '0px 0px -60px 0px', threshold: 0.08 });
     document.querySelectorAll('.fade-up').forEach(function (el) { io.observe(el); });
   } else {
     document.querySelectorAll('.fade-up').forEach(function (el) { el.classList.add('in'); });
   }
-
-  /* ---------------- GSAP marquee (fallback to CSS if unavailable) ---------------- */
-  try {
-    if (window.gsap) {
-      gsap.registerPlugin(window.ScrollTrigger || null);
-    }
-  } catch (e) {}
 
   /* ---------------- FAQ accordion ---------------- */
   document.querySelectorAll('.faq-item').forEach(function (item) {
@@ -70,7 +95,6 @@
         a.style.maxHeight = '0px';
       } else {
         item.classList.add('open');
-        a.style.maxHeight = a.scrollWidth + 'px';
         a.style.maxHeight = a.scrollHeight + 'px';
       }
     });
@@ -88,6 +112,19 @@
     input.addEventListener('input', function () { input.value = maskPhone(input.value); });
   });
 
+  /* ---------------- Subtle parallax on hero image (respect reduced motion) ---------------- */
+  var heroBg = document.querySelector('.hero .hero-bg img');
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (heroBg && !prefersReduced) {
+    var parallax = function () {
+      var y = window.scrollY;
+      if (y > window.innerHeight) return;
+      heroBg.style.transform = 'translate3d(0, ' + (y * 0.18) + 'px, 0) scale(1.02)';
+    };
+    window.addEventListener('scroll', parallax, { passive: true });
+    parallax();
+  }
+
   /* ---------------- Lead modal ---------------- */
   initLeadModal();
 
@@ -104,7 +141,9 @@
       setTimeout(function () {
         var first = modal.querySelector('input, select');
         if (first) first.focus();
-      }, 150);
+      }, 250);
+      // re-render icons in case they weren't yet
+      renderIcons();
     }
     function closeModal() {
       modal.classList.remove('open');
@@ -206,7 +245,7 @@
 
     if (lead && lead.firstName) {
       var greet = document.getElementById('booking-greeting');
-      if (greet) greet.textContent = lead.firstName + ', you\u2019re almost done \u2014 pick a time below.';
+      if (greet) greet.textContent = lead.firstName + ', you’re almost done — pick a time below.';
     }
 
     var calendars = wrap.querySelectorAll('.booking-calendar');

@@ -20,10 +20,10 @@
 <meta name="twitter:image" content="https://guerrillajiujitsumodesto.com/images/hero/IMG_1537.JPG">
 <link rel="icon" type="image/webp" href="images/logo/logo-circle.webp">
 <link rel="apple-touch-icon" href="images/logo/logo-circle.webp">
-<meta name="theme-color" content="#141618">
+<meta name="theme-color" content="#0D0F11">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -54,7 +54,7 @@
       <a href="faqs.html">FAQs</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
-      <button class="nav-cta-mobile" data-cta="lead-modal">Try a Free Class</button>
+      <button class="nav-cta-mobile" data-cta="lead-modal">Try a Free Class <i data-lucide="arrow-right"></i></button>
     </div>
   </div>
 </nav>
@@ -64,11 +64,24 @@
 <!-- HERO -->
 <header class="hero">
   <div class="hero-bg">
-    <img src="images/hero/IMG_1537.JPG" alt="Guerrilla Jiu-Jitsu Modesto competitor at ADCC" loading="lazy" decoding="async">
+    <img src="images/hero/IMG_1537.JPG" alt="Guerrilla Jiu-Jitsu Modesto competitor at ADCC" decoding="async">
   </div>
-  <div class="hero-watermark brand-stamp brand-stamp--circle brand-stamp--watermark" aria-hidden="true"></div>
+  <div class="hero-bignum" aria-hidden="true">GJJM</div>
+  <div class="hero-coords" aria-hidden="true">
+    <span><span class="accent-dot"></span>EST · MODESTO · 209</span>
+    <span>37.7058°N · 120.9366°W</span>
+    <span>NOGI · NO EGO · NO EXCUSES</span>
+  </div>
   <div class="container hero-content">
-    <p class="eyebrow">Modesto, CA · NoGi Specialty</p>
+    <div class="hero-eyebrow-row">
+      <span class="eyebrow">Modesto, CA · NoGi Specialty</span>
+      <span class="hero-rating">
+        <span class="stars">
+          <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+        </span>
+        5.0 · Google Reviews
+      </span>
+    </div>
     <h1 class="display">The <span class="accent">#1</span> Jiu-Jitsu Academy in Modesto.</h1>
     <p class="lead">We teach you how to become an expert at self-defense using Jiu-Jitsu. NoGi-only academy for adults and kids age 3+. Black-belt instruction. Six classes a week. Your first one is free.</p>
     <div class="hero-ctas">
@@ -105,12 +118,13 @@
 <!-- WELCOME -->
 <section>
   <div class="container">
+    <div class="section-index"><span class="num">§01</span> <span class="bar"></span> Welcome</div>
     <div class="section-head--split fade-up">
       <div>
         <p class="eyebrow">Welcome</p>
-        <h2 class="display">Train the art that wins fights, one rep at a time.</h2>
+        <h2 class="display">Train the art that <em>wins fights,</em> one rep at a time.</h2>
       </div>
-      <p class="lead">The only NoGi-specialty academy in the Modesto area. We teach you how to become an expert at self-defense using Jiu-Jitsu — whether you've never stepped on a mat or you're sharpening for competition.</p>
+      <p class="lead lead--muted">The only NoGi-specialty academy in the Modesto area. We teach you how to become an expert at self-defense using Jiu-Jitsu — whether you've never stepped on a mat or you're sharpening for competition.</p>
     </div>
   </div>
 </section>
@@ -118,24 +132,29 @@
 <!-- PROGRAMS -->
 <section style="padding-top: 0;">
   <div class="container">
+    <div class="section-index"><span class="num">§02</span> <span class="bar"></span> Programs</div>
     <div class="programs">
-      <article class="program-card fade-up">
+      <article class="program-card fade-up" data-num="01 / 02">
         <div class="program-card-img">
           <img src="images/gallery/DSC04588.jpg" alt="Adults NoGi class training" loading="lazy" decoding="async">
         </div>
-        <div class="program-card-tag">Adults · 14+</div>
-        <h3 class="display">Adults Jiu-Jitsu (NoGi)</h3>
-        <p>We're the only NoGi-only school in the area. Our beginners program dives into the basic key components and systems of submission grappling. Our advanced class goes deeper into finer details, options, and what to look for when setting traps. Beginner or experienced — both programs are open to you.</p>
-        <button class="btn btn-primary" data-cta="lead-modal" data-program="adults-jiu-jitsu">Start Training <i data-lucide="arrow-right"></i></button>
+        <div class="program-card-body">
+          <div class="program-card-tag">Adults · 14+</div>
+          <h3 class="display">Adults Jiu-Jitsu (NoGi)</h3>
+          <p>We're the only NoGi-only school in the area. Our beginners program dives into the basic key components and systems of submission grappling. Our advanced class goes deeper into finer details, options, and what to look for when setting traps. Beginner or experienced — both programs are open to you.</p>
+          <button class="btn btn-primary" data-cta="lead-modal" data-program="adults-jiu-jitsu">Start Training <i data-lucide="arrow-right"></i></button>
+        </div>
       </article>
-      <article class="program-card fade-up">
+      <article class="program-card fade-up" data-num="02 / 02">
         <div class="program-card-img">
           <img src="images/gallery/IMG_3785.jpg" alt="Group class at Guerrilla Jiu-Jitsu Modesto" loading="lazy" decoding="async">
         </div>
-        <div class="program-card-tag">Kids · Ages 3–11</div>
-        <h3 class="display">Youth / Kids Jiu-Jitsu</h3>
-        <p>Our kids program helps your child become an expert at self-defense using our proven system. Classes for kids age 3 and up, grouped by age for safety. Whether your child wants self-defense, fitness, friends, or to compete — we've got a program that fits.</p>
-        <button class="btn btn-primary" data-cta="lead-modal" data-program="kids-jiu-jitsu">Enroll Your Kid <i data-lucide="arrow-right"></i></button>
+        <div class="program-card-body">
+          <div class="program-card-tag">Kids · Ages 3–11</div>
+          <h3 class="display">Youth / Kids Jiu-Jitsu</h3>
+          <p>Our kids program helps your child become an expert at self-defense using our proven system. Classes for kids age 3 and up, grouped by age for safety. Whether your child wants self-defense, fitness, friends, or to compete — we've got a program that fits.</p>
+          <button class="btn btn-primary" data-cta="lead-modal" data-program="kids-jiu-jitsu">Enroll Your Kid <i data-lucide="arrow-right"></i></button>
+        </div>
       </article>
     </div>
   </div>
@@ -144,13 +163,14 @@
 <!-- INSTRUCTOR FEATURE -->
 <section>
   <div class="container">
+    <div class="section-index"><span class="num">§03</span> <span class="bar"></span> Head Instructor</div>
     <div class="feature-row fade-up">
       <div class="feature-media">
         <img src="images/gallery/merab_aljo_visit-50.JPEG" alt="Mike Cruz with training partners at the academy" loading="lazy" decoding="async">
       </div>
       <div class="feature-copy">
         <p class="eyebrow">Head Instructor</p>
-        <h2 class="display">Mike Cruz. Nine Years on the Mat.</h2>
+        <h2 class="display">Mike Cruz. <em>Nine Years</em> on the Mat.</h2>
         <p>Guerrilla Jiu-Jitsu Modesto is led by Mike Cruz — a black belt with nine years of professional Jiu-Jitsu experience and a lineage that traces through legends of the art. Every class, every drill, every roll is built on that foundation.</p>
         <ul class="feature-list">
           <li>Black Belt under Alejandro Perez</li>
@@ -167,13 +187,14 @@
 <!-- 6 DAYS -->
 <section style="padding-top: 0;">
   <div class="container">
+    <div class="section-index"><span class="num">§04</span> <span class="bar"></span> Training Schedule</div>
     <div class="feature-row feature-row--reverse fade-up">
       <div class="feature-media">
         <img src="images/gallery/IMG_1856.JPG" alt="Guerrilla Jiu-Jitsu Modesto training floor community" loading="lazy" decoding="async">
       </div>
       <div class="feature-copy">
         <p class="eyebrow">Training Schedule</p>
-        <h2 class="display">Six Classes a Week. No Excuses Left.</h2>
+        <h2 class="display">Six Classes a Week. <em>No Excuses</em> Left.</h2>
         <p>Our schedule is built so you can show up consistently — whether you're a shift-worker, a parent, or a competitor in prep mode. Beginners, advanced, open mat, and kids classes run on a rhythm you can plan your life around.</p>
         <ul class="feature-list">
           <li>Monday through Friday — evening adult classes</li>
@@ -187,12 +208,14 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section>
+<!-- TESTIMONIALS — paper break section -->
+<section class="section--paper">
+  <span class="brand-watermark brand-watermark--paper" aria-hidden="true"></span>
   <div class="container">
-    <div class="section-head fade-up">
+    <div class="section-index" style="color: rgba(10,11,13,0.5);"><span class="num" style="color: var(--blood);">§05</span> <span class="bar" style="background: rgba(10,11,13,0.25);"></span> What Members Say</div>
+    <div class="section-head fade-up" style="max-width: 900px;">
       <p class="eyebrow">What Our Members Say</p>
-      <h2 class="display">Real Reviews. Real Students. Real Mat Time.</h2>
+      <h2 class="display">Real Reviews. Real Students. <em>Real Mat Time.</em></h2>
     </div>
     <div class="testimonials">
       <article class="testimonial fade-up">
@@ -241,21 +264,25 @@
 <!-- CTA BANNER -->
 <section class="cta-banner">
   <div class="container fade-up">
-    <span class="brand-medallion" aria-hidden="true"><span class="brand-stamp brand-stamp--circle brand-stamp--gold"></span></span>
-    <p class="eyebrow">Come See What the Hype Is About</p>
-    <h2 class="display">Try Your First Class. <span style="color: var(--accent)">On Us.</span></h2>
+    <span class="brand-medallion" aria-hidden="true"><span class="brand-logo brand-logo--gold"></span></span>
+    <p class="eyebrow eyebrow--plain">Come See What the Hype Is About</p>
+    <h2 class="display">Try Your First Class. <em>On Us.</em></h2>
     <p>Walk in, meet the crew, step on the mat. No pressure, no commitment — we think the academy sells itself.</p>
     <button class="btn btn-primary btn-large" data-cta="lead-modal">Claim Your Free Class <i data-lucide="arrow-right"></i></button>
   </div>
 </section>
 
-<!-- FOOTER -->
 </main>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-lockup"><span class="brand-stamp brand-stamp--circle brand-stamp--gold" style="width:42px;height:42px;" aria-hidden="true"></span><img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy"></div>
+        <div class="footer-brand-lockup">
+          <span class="brand-logo brand-logo--sm" aria-hidden="true"></span>
+          <img class="footer-wordmark" src="images/logo/logo-wordmark.png" alt="Guerrilla Jiu-Jitsu Academy">
+        </div>
         <p>The #1 NoGi Jiu-Jitsu academy in Modesto, CA. Self-defense, submission grappling, and programs for every age.</p>
         <div class="footer-social">
           <a href="http://instagram.com/guerrillajjmodesto" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
@@ -290,7 +317,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© <span data-year></span> Guerrilla Jiu-Jitsu Modesto. All rights reserved.</div>
+      <div>© <span data-year></span> Guerrilla Jiu-Jitsu Modesto · All rights reserved</div>
       <div class="footer-bottom-links">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-conditions.html">Terms & Conditions</a>
@@ -301,6 +328,14 @@
     </p>
   </div>
 </footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <a href="tel:+12096815677" class="sticky-call" aria-label="Call Guerrilla Jiu-Jitsu Modesto">
+    <i data-lucide="phone"></i>
+  </a>
+  <button class="sticky-book" data-cta="lead-modal">Try a Free Class <i data-lucide="arrow-right"></i></button>
+</div>
 
 <!-- LEAD MODAL -->
 <div class="lead-modal" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
@@ -353,6 +388,6 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Guerrilla Jiu-Jitsu Modesto","url":"https://guerrillajiujitsumodesto.com/","logo":"https://guerrillajiujitsumodesto.com/images/logo/logo-wordmark.png","sameAs":["http://instagram.com/guerrillajjmodesto"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Guerrilla Jiu-Jitsu Modesto","url":"https://guerrillajiujitsumodesto.com/"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Guerrilla Jiu-Jitsu Modesto","url":"https://guerrillajiujitsumodesto.com/","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"6","bestRating":"5"},"review":[{"@type":"Review","author":{"@type":"Person","name":"Irving Garcia"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"My younger brother and I went to a trial class and it was great. Mike, the instructor, was super friendly, welcoming, and supportive. 10/10."},{"@type":"Review","author":{"@type":"Person","name":"Miles Martinez"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"This place is the real deal for anyone looking to begin Jiu-Jitsu or level up. Mike and Hani are some of the best in the area."},{"@type":"Review","author":{"@type":"Person","name":"John Peery"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"I've been to a couple of Jiu-Jitsu schools around town and these guys are by far the best. The curriculum here is top notch."}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Brazilian Jiu-Jitsu suitable for beginners?","acceptedAnswer":{"@type":"Answer","text":"Yes. Brazilian Jiu-Jitsu is suitable for beginners of all ages and fitness levels. Our Adults NoGi Beginners class is specifically designed for people who have never stepped on a mat before."}},{"@type":"Question","name":"Do I need to be in shape to start training Brazilian Jiu-Jitsu?","acceptedAnswer":{"@type":"Answer","text":"No. Brazilian Jiu-Jitsu is for everyone, regardless of current fitness level. You'll get in shape by training."}},{"@type":"Question","name":"I'm worried about getting injured. Is Brazilian Jiu-Jitsu safe?","acceptedAnswer":{"@type":"Answer","text":"Brazilian Jiu-Jitsu emphasizes technique and control, not brute force. We teach tapping early and often to keep training safe."}},{"@type":"Question","name":"Can Brazilian Jiu-Jitsu help with self-defense?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Brazilian Jiu-Jitsu teaches effective self-defense techniques for individuals of all sizes and strengths."}},{"@type":"Question","name":"What can I expect in my first Brazilian Jiu-Jitsu class?","acceptedAnswer":{"@type":"Answer","text":"A light warm-up, foundational techniques, and drilling with a partner in a welcoming environment. You won't be thrown into live rolling on day one."}},{"@type":"Question","name":"What should I wear to a NoGi class?","acceptedAnswer":{"@type":"Answer","text":"Athletic shorts without zippers or pockets, and a rashguard or fitted t-shirt. No shoes on the mats."}},{"@type":"Question","name":"Do you offer a free trial class?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 your first class is free."}},{"@type":"Question","name":"Can my child train here?","acceptedAnswer":{"@type":"Answer","text":"Yes. We have kids classes for ages 3 and up, grouped by age for a safe, age-appropriate experience."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Brazilian Jiu-Jitsu suitable for beginners?","acceptedAnswer":{"@type":"Answer","text":"Yes. Brazilian Jiu-Jitsu is suitable for beginners of all ages and fitness levels. Our Adults NoGi Beginners class is specifically designed for people who have never stepped on a mat before."}},{"@type":"Question","name":"Do I need to be in shape to start training Brazilian Jiu-Jitsu?","acceptedAnswer":{"@type":"Answer","text":"No. Brazilian Jiu-Jitsu is for everyone, regardless of current fitness level. You'll get in shape by training."}},{"@type":"Question","name":"I'm worried about getting injured. Is Brazilian Jiu-Jitsu safe?","acceptedAnswer":{"@type":"Answer","text":"Brazilian Jiu-Jitsu emphasizes technique and control, not brute force. We teach tapping early and often to keep training safe."}},{"@type":"Question","name":"Can Brazilian Jiu-Jitsu help with self-defense?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Brazilian Jiu-Jitsu teaches effective self-defense techniques for individuals of all sizes and strengths."}},{"@type":"Question","name":"What can I expect in my first Brazilian Jiu-Jitsu class?","acceptedAnswer":{"@type":"Answer","text":"A light warm-up, foundational techniques, and drilling with a partner in a welcoming environment. You won't be thrown into live rolling on day one."}},{"@type":"Question","name":"What should I wear to a NoGi class?","acceptedAnswer":{"@type":"Answer","text":"Athletic shorts without zippers or pockets, and a rashguard or fitted t-shirt. No shoes on the mats."}},{"@type":"Question","name":"Do you offer a free trial class?","acceptedAnswer":{"@type":"Answer","text":"Yes — your first class is free."}},{"@type":"Question","name":"Can my child train here?","acceptedAnswer":{"@type":"Answer","text":"Yes. We have kids classes for ages 3 and up, grouped by age for a safe, age-appropriate experience."}}]}</script>
 </body>
 </html>
