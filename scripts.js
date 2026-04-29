@@ -206,7 +206,7 @@
           webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/93de8b3c-eff9-4a43-8e8a-8ed7223a4016');
         }
 
-        if (data.program === 'kids-jiu-jitsu') {
+        if (data.program === 'kids-jiu-jitsu' || data.program === 'kids-jiu-jitsu-3-7' || data.program === 'kids-jiu-jitsu-8-12') {
           webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/c0125bb8-12ca-46dd-82a7-f628522011a9');
           webhooks.push('https://services.leadconnectorhq.com/hooks/E4Cw21kwKqfDDFY8h7pU/webhook-trigger/b5f38aae-8aa3-4ea8-8804-30039ffe29ac');
         }
